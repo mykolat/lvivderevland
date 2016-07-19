@@ -1,0 +1,7 @@
+<form action="post" data-sending="{{ site.text.contact.ajax.sending }}" data-sent="{{ site.text.contact.ajax.sent }}" data-submit="{{ site.text.contact.submit }}" data-error="{{ site.text.contact.ajax.error }}" data-email="{{ site.email }}" class="center-block form-stacked">
+    <input type="text" name="usrname" class="field-light" placeholder="{{ site.text.contact.name }}">
+    <input type="email" name="email" class="field-light" placeholder="{{ site.text.contact.email }}">
+    <input type="tel" name="phone" class="field-light" rows="5" placeholder="{{ site.text.contact.phone }}"> </textarea>
+    <!-- <input type="text" name="_gotcha" style="display:none" /> -->
+    <button type='submit' class="center-block btn btn-primary btn-lg">{{ site.text.contact.submit }}</button>
+</form>
