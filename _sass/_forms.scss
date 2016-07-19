@@ -1,0 +1,74 @@
+fieldset,
+input,
+select,
+textarea {
+    font-size: $form-field-font-size;
+    margin-top: 0;
+    margin-bottom: $space-2;
+    color: $dark-gray;
+    padding: $form-field-padding;
+}
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week] {
+    box-sizing: border-box;
+    min-height: $form-field-height;
+    padding: $form-field-padding;
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+.form-stacked {
+    width: 300px;
+}
+.field-light {
+    background-color: white;
+    transition: box-shadow 0.2s ease;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+.field-light:focus {
+    outline: none;
+    border-color: $blue;
+    box-shadow: 0 0 2px rgba($blue,.5);
+}
+.field-light:disabled {
+    color: $mid-gray;
+    background-color: $darken-2;
+}
+.field-light:read-only:not(select) {
+    background-color: $darken-2;
+}
+.field-light:invalid {
+    border-color: $red;
+}
+.field-light.is-success {
+    border-color: $green;
+}
+.field-light.is-warning {
+    border-color: $yellow;
+}
+.field-light.is-error {
+    border-color: $red;
+}
+.checkbox-light,
+.radio-light {
+    transition: box-shadow 0.2s ease;
+}
+.radio-light {
+    border-radius: 50%;
+}
+.checkbox-light:focus,
+.radio-light:focus {
+    outline: none;
+    box-shadow: 0 0 2px rgba($blue, .5);
+}
