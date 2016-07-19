@@ -1,6 +1,6 @@
 # Site settings
 title:
-email:
+email: mykolanr@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
@@ -10,3 +10,15 @@ github_username:
 
 # Build settings
 markdown: kramdown
+
+text:
+  contact:
+    name:    'Як до вас звертатися?'
+    email:    'Поштова скринька'
+    phone:    'Номер телефону'
+    subject:  'Нове повідомлення'
+    submit:   'Відправити'
+    ajax:
+      sending:  'відправка..'
+      sent:     'Повідомлення відправлено'
+      error:    'Помилка відправлення!'
