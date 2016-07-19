@@ -19,12 +19,14 @@ input[type=tel],
 input[type=text],
 input[type=time],
 input[type=url],
+button[type=submit],
 input[type=week] {
     box-sizing: border-box;
     min-height: $form-field-height;
     padding: $form-field-padding;
     vertical-align: middle;
     -webkit-appearance: none;
+    outline: none!important;
 }
 .form-stacked {
     width: 300px;
@@ -36,30 +38,12 @@ input[type=week] {
     border-radius: 0;
     width: 100%;
 }
-.field-light:focus {
-    outline: none;
-    border-color: $blue;
-    box-shadow: 0 0 2px rgba($blue,.5);
-}
-.field-light:disabled {
-    color: $mid-gray;
-    background-color: $darken-2;
-}
-.field-light:read-only:not(select) {
-    background-color: $darken-2;
-}
-.field-light:invalid {
-    border-color: $red;
-}
-.field-light.is-success {
-    border-color: $green;
-}
-.field-light.is-warning {
-    border-color: $yellow;
-}
-.field-light.is-error {
-    border-color: $red;
-}
+// .field-light:focus {
+//     outline: none;
+//     border-color: $blue;
+//     box-shadow: 0 0 2px rgba($blue,.5);
+// }
+
 .checkbox-light,
 .radio-light {
     transition: box-shadow 0.2s ease;
@@ -67,8 +51,8 @@ input[type=week] {
 .radio-light {
     border-radius: 50%;
 }
-.checkbox-light:focus,
-.radio-light:focus {
-    outline: none;
-    box-shadow: 0 0 2px rgba($blue, .5);
-}
+// .checkbox-light:focus,
+// // .radio-light:focus {
+// //     outline: none;
+// //     box-shadow: 0 0 2px rgba($blue, .5);
+// // }

@@ -10,7 +10,7 @@ body {
 }
 
 hr {
-    border-color: $theme-primary;
+    border-color: $brand-primary;
     border-width: 3px;
     max-width: 50px;
 }
@@ -19,14 +19,14 @@ hr.light {
     border-color: white;
 }
 
-a {
-    @include transition-all;
-    color: $theme-primary;
-    &:hover,
-    &:focus {
-        color: darken($theme-primary, 10%);
-    }
-}
+// a {
+//     @include transition-all;
+//     color: $theme-primary;
+//     &:hover,
+//     &:focus {
+//         color: darken($theme-primary, 10%);
+//     }
+// }
 
 h1,
 h2,
@@ -44,7 +44,7 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: $brand-primary;
 }
 
 .bg-dark {
@@ -299,14 +299,14 @@ header {
     padding-left:0;
 }
 
-// Button Styles
-.btn-default {
-    @include button-variant($theme-dark, white, white);
-}
-
-.btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
-}
+// // Button Styles
+// .btn-default {
+//     @include button-variant($theme-dark, white, white);
+// }
+//
+// .btn-primary {
+//     @include button-variant(white, $theme-primary, $theme-primary);
+// }
 
 .btn {
     @include sans-serif-font;
@@ -314,6 +314,7 @@ header {
     border-radius: 300px;
     font-weight: 700;
     text-transform: uppercase;
+    @transition: ball 1000ms linear;
 }
 
 .btn-xl {
